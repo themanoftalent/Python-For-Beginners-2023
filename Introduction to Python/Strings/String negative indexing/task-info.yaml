@@ -1,0 +1,53 @@
+type: edu
+files:
+- name: negative_indexing.py
+  visible: true
+  placeholders:
+  - offset: 58
+    length: 15
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 58
+    initialized_from_dependency: false
+    possible_answer: long_string[-1]
+    selected: true
+    status: Solved
+  text: |
+    long_string = "This is a very long string!"
+    exclamation = type here
+    print(exclamation)
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |+
+    from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders
+
+
+    def test_value():
+        file = import_task_file()
+        if hasattr(file, "exclamation") and file.exclamation == "!":
+            passed()
+        else:
+            failed("Use -1 index to get the last character")
+
+
+    def test_negative_index():
+        window = get_answer_placeholders()[0]
+        if "-" in window:
+            passed()
+        else:
+            failed("Use negative index")
+
+    if __name__ == '__main__':
+        run_common_tests()
+
+        test_negative_index()
+        test_value()
+
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 22 Oct 2020 08:09:53 UTC
+record: -1

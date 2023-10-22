@@ -1,0 +1,62 @@
+type: edu
+files:
+- name: param_args.py
+  visible: true
+  placeholders:
+  - offset: 159
+    length: 88
+    placeholder_text: define a function named 'square' that prints square of passed
+      parameter
+    initial_state:
+      length: 71
+      offset: 159
+    initialized_from_dependency: false
+    possible_answer: 'def square(x):'
+    selected: true
+    status: Solved
+  text: |
+    def foo(x):                 # x is a function parameter
+        print("x = " + str(x))
+
+    foo(5)   # pass 5 to foo(). Here 5 is an argument passed to function foo.
+
+    define a function named 'square' that prints square of passed parameter
+        print(x ** 2)
+
+    square(4)
+    square(8)
+    square(15)
+    square(23)
+    square(42)
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |-
+    from test_helper import run_common_tests, failed, get_answer_placeholders, passed
+
+
+    def test_window():
+        window = get_answer_placeholders()[0]
+        if "square" in window and "def " in window:
+            passed()
+        else:
+            failed("Name your function 'square'")
+
+
+    def test_column():
+        window = get_answer_placeholders()[0]
+        if ":" in window:
+            passed()
+        else:
+            failed("Don't forget a colon at the end of the statement")
+
+    if __name__ == '__main__':
+        run_common_tests()
+        test_column()
+        test_window()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 20 Oct 2020 14:13:24 UTC
+record: -1

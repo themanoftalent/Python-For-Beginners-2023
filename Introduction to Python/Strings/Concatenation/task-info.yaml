@@ -1,0 +1,62 @@
+type: edu
+files:
+- name: concatenation.py
+  visible: true
+  placeholders:
+  - offset: 47
+    length: 17
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 47
+    initialized_from_dependency: false
+    possible_answer: hello + ' ' + world
+    selected: true
+    status: Solved
+  text: |
+    hello = "Hello"
+    world = 'World'
+
+    hello_world = type here
+    print(hello_world)      # Note: you should print "Hello World"
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |+
+    from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders
+
+
+    def test_value():
+        file = import_task_file()
+        if hasattr(file, "hello_world") and file.hello_world == "HelloWorld":
+            failed("Use one-space string ' ' in concatenation.")
+        else:
+            passed()
+
+
+    def test_value_2():
+        file = import_task_file()
+        if hasattr(file, "hello_world") and file.hello_world == "Hello World":
+            passed()
+        else:
+            failed("Use + operator")
+
+    def test_concat_used():
+        window = get_answer_placeholders()[0]
+        if "hello" in window and "world" in window and "+" in window:
+            passed()
+        else:
+            failed("Use previously defined variables and concatenation (+) to combine variables")
+
+    if __name__ == '__main__':
+        run_common_tests()
+        test_value()
+        test_value_2()
+        test_concat_used()
+
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 22 Oct 2020 08:08:30 UTC
+record: -1

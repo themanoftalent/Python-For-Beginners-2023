@@ -1,0 +1,46 @@
+type: edu
+files:
+- name: boolean_operators.py
+  visible: true
+  placeholders:
+  - offset: 132
+    length: 28
+    placeholder_text: John is not 23 years old
+    initial_state:
+      length: 24
+      offset: 132
+    initialized_from_dependency: false
+    possible_answer: name == 'John' and age != 23
+    selected: true
+    status: Solved
+  text: |
+    name = "John"
+    age = 17
+
+    print(name == "John" or age == 17)    # checks that either name equals to "John" OR age equals to 17
+
+    print(John is not 23 years old)
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |-
+    from test_helper import run_common_tests, passed, failed, get_answer_placeholders
+
+
+    def test_window():
+        window = get_answer_placeholders()[0]
+        if "name" in window and "John" in window and "and" in window and "23" in window:
+            passed()
+        else:
+            failed("Use 'and' keyword and != operator")
+
+
+    if __name__ == '__main__':
+        run_common_tests("Use 'and' keyword and != operator")
+        test_window()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 20 Oct 2020 13:58:59 UTC
+record: -1

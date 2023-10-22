@@ -1,0 +1,66 @@
+type: edu
+files:
+- name: access_variable.py
+  visible: true
+  placeholders:
+  - offset: 410
+    length: 19
+    placeholder_text: value of variable1 from my_object
+    initial_state:
+      length: 33
+      offset: 408
+    initialized_from_dependency: false
+    possible_answer: my_object.variable1
+    selected: false
+    status: Solved
+  text: |+
+    class MyClass:
+        variable1 = 1
+        variable2 = 2
+
+        def foo(self):     # we'll explain self parameter later in task 4
+            print("Hello from function foo")
+
+    my_object = MyClass()
+    my_object1 = MyClass()
+
+    my_object.variable2 = 3     # change value stored in variable2 in my_object
+
+    print(my_object.variable2)
+    print(my_object1.variable2)
+
+    my_object.foo()   # call method foo() of object my_object
+
+    print(value of variable1 from my_object)
+
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import run_common_tests, failed, passed, get_answer_placeholders
+
+
+    def test_window():
+        window = get_answer_placeholders()[0]
+        if "my_object" in window and "variable1" in window:
+            passed()
+        else:
+            failed("Access 'variable1' using my_object.variable1")
+
+    def test_window1():
+        window = get_answer_placeholders()[0]
+        if "my_object " in window or "my_object." in window:
+            passed()
+        else:
+            failed("Access 'variable1' using my_object.variable1")
+
+    if __name__ == '__main__':
+        run_common_tests()
+        test_window()
+        test_window1()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 22 Oct 2020 16:04:26 UTC
+record: -1

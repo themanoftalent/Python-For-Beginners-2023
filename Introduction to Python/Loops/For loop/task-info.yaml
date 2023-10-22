@@ -1,0 +1,48 @@
+type: edu
+files:
+- name: for_loop.py
+  visible: true
+  placeholders:
+  - offset: 238
+    length: 21
+    placeholder_text: iterate over primes using for loop
+    initial_state:
+      length: 34
+      offset: 238
+    initialized_from_dependency: false
+    possible_answer: 'for prime in primes:'
+    selected: true
+    status: Solved
+  text: |
+    for i in range(5):    # for each number i in range 0-4. range(5) function returns list [0, 1, 2, 3, 4]
+        print(i)          # this line is executed 5 times. First time i equals 0, then 1, ...
+
+
+    primes = [2, 3, 5, 7]   # create new list
+
+    iterate over primes using for loop
+        print(prime)
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |-
+    from test_helper import run_common_tests, failed, passed, get_answer_placeholders
+
+
+    def test_window():
+        window = get_answer_placeholders()[0]
+        if "prime" in window and "for " in window and "primes" in window and " in " in window:
+            passed()
+        else:
+            failed("Use for loop to iterate over 'primes'")
+
+
+    if __name__ == '__main__':
+        run_common_tests()
+        test_window()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 20 Oct 2020 13:59:48 UTC
+record: -1

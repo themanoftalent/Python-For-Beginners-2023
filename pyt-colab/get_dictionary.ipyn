@@ -1,0 +1,6 @@
+def getList(dict):
+	return [*dict]
+	
+
+dict = {'name': 'Man', 'prep': 'for', 'subject': 'you'}
+print(getList(dict))

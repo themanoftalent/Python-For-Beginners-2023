@@ -1,0 +1,7 @@
+Teachers
+Doctors
+Engineers
+Nurses
+Presidensts
+=======================
+We add file = to write each line separate

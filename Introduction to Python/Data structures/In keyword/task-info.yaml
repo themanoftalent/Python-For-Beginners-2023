@@ -1,0 +1,54 @@
+type: edu
+files:
+- name: in_keyword.py
+  visible: true
+  placeholders:
+  - offset: 249
+    length: 29
+    placeholder_text: is 'fish' in grocery_dict keys
+    initial_state:
+      length: 30
+      offset: 236
+    initialized_from_dependency: false
+    possible_answer: '"fish" in grocery_dict.keys()'
+    selected: true
+    status: Solved
+  text: |
+    grocery_list = ["fish", "tomato", "apples"]   # create new list
+
+    print("tomato" in grocery_list)    # check that grocery_list contains "tomato" item
+
+    grocery_dict = {"fish": 1, "tomato": 6, "apples": 3}   # create new dictionary
+
+    print(is 'fish' in grocery_dict keys)
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |-
+    from test_helper import run_common_tests, failed, passed, get_answer_placeholders
+
+
+    def test_window():
+        window = get_answer_placeholders()[0]
+        if "grocery_dict" in window and " in " in window:
+            passed()
+        else:
+            failed("Use in keyword")
+
+    def test_fish():
+        window = get_answer_placeholders()[0]
+        if "fish" in window:
+            passed()
+        else:
+            failed("Check if grocery_dict keys contain fish")
+
+    if __name__ == '__main__':
+        run_common_tests("Use in keyword")
+        test_window()
+        test_fish()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 20 Oct 2020 13:57:00 UTC
+record: -1

@@ -1,0 +1,17 @@
+include LICENSE
+include README.rst
+include INTRODUCTION.rst
+include INSTALLATION.rst
+include TUTORIAL.rst
+include CUSTOMIZATION.rst
+include GALLERY.rst
+include CONTRIBUTING.rst
+include PARALLELIZATION.rst
+include CREDITS.rst
+include HISTORY.rst
+
+recursive-include spux *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
+recursive-include docs *.rst conf.py Makefile make.bat *.jpg *.png *.gif

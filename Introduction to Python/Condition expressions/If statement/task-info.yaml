@@ -1,0 +1,62 @@
+type: edu
+files:
+- name: if_statement.py
+  visible: true
+  placeholders:
+  - offset: 236
+    length: 20
+    placeholder_text: check if 'tasks' is empty
+    initial_state:
+      length: 25
+      offset: 236
+    initialized_from_dependency: false
+    possible_answer: 'if len(tasks) == 0:'
+    selected: true
+    status: Solved
+  text: |
+    name = "John"
+    age = 17
+
+    if name == "John" or age == 17:   # check that name is "John" or age is 17. If so print next 2 lines.
+        print("name is John")
+        print("John is 17 years old")
+
+    tasks = ["task1", "task2"]    # create new list
+
+    check if 'tasks' is empty
+        print("empty")
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |-
+    from test_helper import run_common_tests, failed, passed, get_answer_placeholders
+
+
+    def test_window():
+        window = get_answer_placeholders()[0]
+        if ":" in window:
+            passed()
+        else:
+            failed("Don't forget a column at the end")
+
+
+    def test_len():
+        window = get_answer_placeholders()[0]
+        if "len" in window:
+            passed()
+        elif "not" in window:
+            passed()
+        else:
+            failed("Use len function to check that tasks is empty")
+
+
+    if __name__ == '__main__':
+        run_common_tests()
+        test_window()
+        test_len()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 20 Oct 2020 13:59:05 UTC
+record: -1

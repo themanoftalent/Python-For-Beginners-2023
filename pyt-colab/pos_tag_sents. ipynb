@@ -1,0 +1,549 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "tokenlestirme.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyOOlN7PJcSX6k3SPkvfzTjR",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/themanoftalent/pyt-colab/blob/master/pos_tag_sents.%20ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "KidtxHX7-AR6"
+      },
+      "source": [
+        "import nltk"
+      ],
+      "execution_count": 118,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hnGucOu1-ack",
+        "outputId": "db6a87c5-d931-4e23-b954-ec959504847e"
+      },
+      "source": [
+        "import nltk\n",
+        "nltk.download('averaged_perceptron_tagger')"
+      ],
+      "execution_count": 119,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[nltk_data] Downloading package averaged_perceptron_tagger to\n",
+            "[nltk_data]     /root/nltk_data...\n",
+            "[nltk_data]   Package averaged_perceptron_tagger is already up-to-\n",
+            "[nltk_data]       date!\n"
+          ],
+          "name": "stdout"
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 119
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "mFavYOmJ-C7G"
+      },
+      "source": [
+        "tekist = 'Friedrich Nietzsche was a German philosopher who became one of the most influential of all modern thinkers. His attempts to unmask the motives that underlie traditional Western religion, morality, and philosophy deeply affected generations of theologians, philosophers, psychologists, poets, novelists, and playwrights.'"
+      ],
+      "execution_count": 120,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "pLczWXlI-LaY"
+      },
+      "source": [
+        "tokenlestir = word_tokenize(tekist)"
+      ],
+      "execution_count": 121,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "A0j7ZDI9-QTU",
+        "outputId": "3ecb2531-a505-4d13-f8fd-e3453e817014"
+      },
+      "source": [
+        "nltk.pos_tag_sents(tokenlestir)"
+      ],
+      "execution_count": 122,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[[('F', 'NNP'),\n",
+              "  ('r', 'NN'),\n",
+              "  ('i', 'NN'),\n",
+              "  ('e', 'VBP'),\n",
+              "  ('d', 'NN'),\n",
+              "  ('r', 'NN'),\n",
+              "  ('i', 'NN'),\n",
+              "  ('c', 'VBP'),\n",
+              "  ('h', 'NN')],\n",
+              " [('N', 'NNP'),\n",
+              "  ('i', 'NN'),\n",
+              "  ('e', 'VBP'),\n",
+              "  ('t', 'JJ'),\n",
+              "  ('z', 'NN'),\n",
+              "  ('s', 'NN'),\n",
+              "  ('c', 'NN'),\n",
+              "  ('h', 'NN'),\n",
+              "  ('e', 'NN')],\n",
+              " [('w', 'VB'), ('a', 'DT'), ('s', 'NN')],\n",
+              " [('a', 'DT')],\n",
+              " [('G', 'NNP'),\n",
+              "  ('e', 'NN'),\n",
+              "  ('r', 'NN'),\n",
+              "  ('m', 'VBD'),\n",
+              "  ('a', 'DT'),\n",
+              "  ('n', 'NN')],\n",
+              " [('p', 'NN'),\n",
+              "  ('h', 'NN'),\n",
+              "  ('i', 'JJ'),\n",
+              "  ('l', 'NN'),\n",
+              "  ('o', 'NN'),\n",
+              "  ('s', 'NN'),\n",
+              "  ('o', 'NN'),\n",
+              "  ('p', 'NN'),\n",
+              "  ('h', 'NN'),\n",
+              "  ('e', 'NN'),\n",
+              "  ('r', 'NN')],\n",
+              " [('w', 'NN'), ('h', 'NN'), ('o', 'NN')],\n",
+              " [('b', 'NN'),\n",
+              "  ('e', 'NN'),\n",
+              "  ('c', 'VBZ'),\n",
+              "  ('a', 'DT'),\n",
+              "  ('m', 'NN'),\n",
+              "  ('e', 'NN')],\n",
+              " [('o', 'JJ'), ('n', 'NN'), ('e', 'NN')],\n",
+              " [('o', 'NN'), ('f', 'NN')],\n",
+              " [('t', 'NN'), ('h', 'NN'), ('e', 'NN')],\n",
+              " [('m', 'NN'), ('o', 'MD'), ('s', 'VB'), ('t', 'NN')],\n",
+              " [('i', 'NN'),\n",
+              "  ('n', 'VBP'),\n",
+              "  ('f', 'JJ'),\n",
+              "  ('l', 'NN'),\n",
+              "  ('u', 'JJ'),\n",
+              "  ('e', 'NN'),\n",
+              "  ('n', 'IN'),\n",
+              "  ('t', 'NN'),\n",
+              "  ('i', 'VBP'),\n",
+              "  ('a', 'DT'),\n",
+              "  ('l', 'NN')],\n",
+              " [('o', 'NN'), ('f', 'NN')],\n",
+              " [('a', 'DT'), ('l', 'NN'), ('l', 'NN')],\n",
+              " [('m', 'NN'),\n",
+              "  ('o', 'MD'),\n",
+              "  ('d', 'VB'),\n",
+              "  ('e', 'NN'),\n",
+              "  ('r', 'NN'),\n",
+              "  ('n', 'NN')],\n",
+              " [('t', 'NN'),\n",
+              "  ('h', 'NN'),\n",
+              "  ('i', 'NN'),\n",
+              "  ('n', 'VBP'),\n",
+              "  ('k', 'NN'),\n",
+              "  ('e', 'NN'),\n",
+              "  ('r', 'NN'),\n",
+              "  ('s', 'NN')],\n",
+              " [('.', '.')],\n",
+              " [('H', 'NNP'), ('i', 'NN'), ('s', 'NN')],\n",
+              " [('a', 'DT'),\n",
+              "  ('t', 'NN'),\n",
+              "  ('t', 'NN'),\n",
+              "  ('e', 'NN'),\n",
+              "  ('m', 'NN'),\n",
+              "  ('p', 'NN'),\n",
+              "  ('t', 'NN'),\n",
+              "  ('s', 'NN')],\n",
+              " [('t', 'NN'), ('o', 'NN')],\n",
+              " [('u', 'JJ'),\n",
+              "  ('n', 'MD'),\n",
+              "  ('m', 'VB'),\n",
+              "  ('a', 'DT'),\n",
+              "  ('s', 'NN'),\n",
+              "  ('k', 'NN')],\n",
+              " [('t', 'NN'), ('h', 'NN'), ('e', 'NN')],\n",
+              " [('m', 'NN'),\n",
+              "  ('o', 'IN'),\n",
+              "  ('t', 'NN'),\n",
+              "  ('i', 'NN'),\n",
+              "  ('v', 'VBP'),\n",
+              "  ('e', 'NN'),\n",
+              "  ('s', 'NN')],\n",
+              " [('t', 'NN'), ('h', 'VBZ'), ('a', 'DT'), ('t', 'NN')],\n",
+              " [('u', 'JJ'),\n",
+              "  ('n', 'JJ'),\n",
+              "  ('d', 'NN'),\n",
+              "  ('e', 'NN'),\n",
+              "  ('r', 'NN'),\n",
+              "  ('l', 'NN'),\n",
+              "  ('i', 'NN'),\n",
+              "  ('e', 'VBP')],\n",
+              " [('t', 'NN'),\n",
+              "  ('r', 'VBZ'),\n",
+              "  ('a', 'DT'),\n",
+              "  ('d', 'NN'),\n",
+              "  ('i', 'NN'),\n",
+              "  ('t', 'VBP'),\n",
+              "  ('i', 'NN'),\n",
+              "  ('o', 'VBP'),\n",
+              "  ('n', 'IN'),\n",
+              "  ('a', 'DT'),\n",
+              "  ('l', 'NN')],\n",
+              " [('W', 'NNP'),\n",
+              "  ('e', 'NN'),\n",
+              "  ('s', 'NN'),\n",
+              "  ('t', 'NN'),\n",
+              "  ('e', 'NN'),\n",
+              "  ('r', 'NN'),\n",
+              "  ('n', 'NN')],\n",
+              " [('r', 'NN'),\n",
+              "  ('e', 'NN'),\n",
+              "  ('l', 'NN'),\n",
+              "  ('i', 'NN'),\n",
+              "  ('g', 'VBP'),\n",
+              "  ('i', 'NN'),\n",
+              "  ('o', 'VBP'),\n",
+              "  ('n', 'NN')],\n",
+              " [(',', ',')],\n",
+              " [('m', 'NN'),\n",
+              "  ('o', 'MD'),\n",
+              "  ('r', 'VB'),\n",
+              "  ('a', 'DT'),\n",
+              "  ('l', 'NN'),\n",
+              "  ('i', 'NN'),\n",
+              "  ('t', 'VBP'),\n",
+              "  ('y', 'NN')],\n",
+              " [(',', ',')],\n",
+              " [('a', 'DT'), ('n', 'JJ'), ('d', 'NN')],\n",
+              " [('p', 'NN'),\n",
+              "  ('h', 'NN'),\n",
+              "  ('i', 'JJ'),\n",
+              "  ('l', 'NN'),\n",
+              "  ('o', 'NN'),\n",
+              "  ('s', 'NN'),\n",
+              "  ('o', 'NN'),\n",
+              "  ('p', 'NN'),\n",
+              "  ('h', 'NN'),\n",
+              "  ('y', 'NN')],\n",
+              " [('d', 'NN'),\n",
+              "  ('e', 'NN'),\n",
+              "  ('e', 'NN'),\n",
+              "  ('p', 'NN'),\n",
+              "  ('l', 'NN'),\n",
+              "  ('y', 'NN')],\n",
+              " [('a', 'DT'),\n",
+              "  ('f', 'JJ'),\n",
+              "  ('f', 'NN'),\n",
+              "  ('e', 'NN'),\n",
+              "  ('c', 'VBP'),\n",
+              "  ('t', 'NN'),\n",
+              "  ('e', 'NN'),\n",
+              "  ('d', 'NN')],\n",
+              " [('g', 'NN'),\n",
+              "  ('e', 'NN'),\n",
+              "  ('n', 'JJ'),\n",
+              "  ('e', 'NN'),\n",
+              "  ('r', 'VBZ'),\n",
+              "  ('a', 'DT'),\n",
+              "  ('t', 'NN'),\n",
+              "  ('i', 'NN'),\n",
+              "  ('o', 'VBP'),\n",
+              "  ('n', 'JJ'),\n",
+              "  ('s', 'NN')],\n",
+              " [('o', 'NN'), ('f', 'NN')],\n",
+              " [('t', 'NN'),\n",
+              "  ('h', 'NN'),\n",
+              "  ('e', 'NN'),\n",
+              "  ('o', 'IN'),\n",
+              "  ('l', 'NN'),\n",
+              "  ('o', 'IN'),\n",
+              "  ('g', 'NN'),\n",
+              "  ('i', 'VBP'),\n",
+              "  ('a', 'DT'),\n",
+              "  ('n', 'NN'),\n",
+              "  ('s', 'NN')],\n",
+              " [(',', ',')],\n",
+              " [('p', 'NN'),\n",
+              "  ('h', 'NN'),\n",
+              "  ('i', 'JJ'),\n",
+              "  ('l', 'NN'),\n",
+              "  ('o', 'NN'),\n",
+              "  ('s', 'NN'),\n",
+              "  ('o', 'NN'),\n",
+              "  ('p', 'NN'),\n",
+              "  ('h', 'NN'),\n",
+              "  ('e', 'NN'),\n",
+              "  ('r', 'NN'),\n",
+              "  ('s', 'NN')],\n",
+              " [(',', ',')],\n",
+              " [('p', 'NN'),\n",
+              "  ('s', 'NN'),\n",
+              "  ('y', 'NN'),\n",
+              "  ('c', 'NN'),\n",
+              "  ('h', 'NN'),\n",
+              "  ('o', 'JJ'),\n",
+              "  ('l', 'NN'),\n",
+              "  ('o', 'IN'),\n",
+              "  ('g', 'NN'),\n",
+              "  ('i', 'NN'),\n",
+              "  ('s', 'VBP'),\n",
+              "  ('t', 'NN'),\n",
+              "  ('s', 'NN')],\n",
+              " [(',', ',')],\n",
+              " [('p', 'NN'), ('o', 'MD'), ('e', 'VB'), ('t', 'NNS'), ('s', 'VB')],\n",
+              " [(',', ',')],\n",
+              " [('n', 'JJ'),\n",
+              "  ('o', 'NN'),\n",
+              "  ('v', 'NN'),\n",
+              "  ('e', 'NN'),\n",
+              "  ('l', 'NN'),\n",
+              "  ('i', 'NN'),\n",
+              "  ('s', 'VBP'),\n",
+              "  ('t', 'NN'),\n",
+              "  ('s', 'NN')],\n",
+              " [(',', ',')],\n",
+              " [('a', 'DT'), ('n', 'JJ'), ('d', 'NN')],\n",
+              " [('p', 'NN'),\n",
+              "  ('l', 'VBZ'),\n",
+              "  ('a', 'DT'),\n",
+              "  ('y', 'NN'),\n",
+              "  ('w', 'NN'),\n",
+              "  ('r', 'NN'),\n",
+              "  ('i', 'NN'),\n",
+              "  ('g', 'VBP'),\n",
+              "  ('h', 'NN'),\n",
+              "  ('t', 'NN'),\n",
+              "  ('s', 'NN')],\n",
+              " [('.', '.')]]"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 122
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ufzeeKGV-XdI",
+        "outputId": "bbadded8-deb2-4a3d-e954-fc9357c3f26b"
+      },
+      "source": [
+        "nltk.pos_tag(tokenlestir)"
+      ],
+      "execution_count": 123,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[('Friedrich', 'NNP'),\n",
+              " ('Nietzsche', 'NNP'),\n",
+              " ('was', 'VBD'),\n",
+              " ('a', 'DT'),\n",
+              " ('German', 'JJ'),\n",
+              " ('philosopher', 'NN'),\n",
+              " ('who', 'WP'),\n",
+              " ('became', 'VBD'),\n",
+              " ('one', 'CD'),\n",
+              " ('of', 'IN'),\n",
+              " ('the', 'DT'),\n",
+              " ('most', 'RBS'),\n",
+              " ('influential', 'JJ'),\n",
+              " ('of', 'IN'),\n",
+              " ('all', 'DT'),\n",
+              " ('modern', 'JJ'),\n",
+              " ('thinkers', 'NNS'),\n",
+              " ('.', '.'),\n",
+              " ('His', 'PRP$'),\n",
+              " ('attempts', 'NNS'),\n",
+              " ('to', 'TO'),\n",
+              " ('unmask', 'VB'),\n",
+              " ('the', 'DT'),\n",
+              " ('motives', 'NNS'),\n",
+              " ('that', 'WDT'),\n",
+              " ('underlie', 'VBP'),\n",
+              " ('traditional', 'JJ'),\n",
+              " ('Western', 'JJ'),\n",
+              " ('religion', 'NN'),\n",
+              " (',', ','),\n",
+              " ('morality', 'NN'),\n",
+              " (',', ','),\n",
+              " ('and', 'CC'),\n",
+              " ('philosophy', 'NN'),\n",
+              " ('deeply', 'RB'),\n",
+              " ('affected', 'JJ'),\n",
+              " ('generations', 'NNS'),\n",
+              " ('of', 'IN'),\n",
+              " ('theologians', 'NNS'),\n",
+              " (',', ','),\n",
+              " ('philosophers', 'NNS'),\n",
+              " (',', ','),\n",
+              " ('psychologists', 'NNS'),\n",
+              " (',', ','),\n",
+              " ('poets', 'NNS'),\n",
+              " (',', ','),\n",
+              " ('novelists', 'NNS'),\n",
+              " (',', ','),\n",
+              " ('and', 'CC'),\n",
+              " ('playwrights', 'NNS'),\n",
+              " ('.', '.')]"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 123
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "g4ubSS3s-sgU"
+      },
+      "source": [
+        "def tanimla(n):\n",
+        "  tokenlestirelim = word_tokenize(n)\n",
+        "  cikti=nltk.pos_tag(tokenlestirelim)\n",
+        "  print(cikti)"
+      ],
+      "execution_count": 124,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-ndgc_Kl_7YS",
+        "outputId": "338deb0a-0e83-4832-a906-2298c3487380"
+      },
+      "source": [
+        "tanimla('Friedrich Nietzsche was a German philosopher who became one of the most influential of all modern thinkers. His attempts to unmask the motives that underlie traditional Western religion, morality, and philosophy deeply affected generations of theologians, philosophers, psychologists, poets, novelists, and playwrights.')"
+      ],
+      "execution_count": 125,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[('Friedrich', 'NNP'), ('Nietzsche', 'NNP'), ('was', 'VBD'), ('a', 'DT'), ('German', 'JJ'), ('philosopher', 'NN'), ('who', 'WP'), ('became', 'VBD'), ('one', 'CD'), ('of', 'IN'), ('the', 'DT'), ('most', 'RBS'), ('influential', 'JJ'), ('of', 'IN'), ('all', 'DT'), ('modern', 'JJ'), ('thinkers', 'NNS'), ('.', '.'), ('His', 'PRP$'), ('attempts', 'NNS'), ('to', 'TO'), ('unmask', 'VB'), ('the', 'DT'), ('motives', 'NNS'), ('that', 'WDT'), ('underlie', 'VBP'), ('traditional', 'JJ'), ('Western', 'JJ'), ('religion', 'NN'), (',', ','), ('morality', 'NN'), (',', ','), ('and', 'CC'), ('philosophy', 'NN'), ('deeply', 'RB'), ('affected', 'JJ'), ('generations', 'NNS'), ('of', 'IN'), ('theologians', 'NNS'), (',', ','), ('philosophers', 'NNS'), (',', ','), ('psychologists', 'NNS'), (',', ','), ('poets', 'NNS'), (',', ','), ('novelists', 'NNS'), (',', ','), ('and', 'CC'), ('playwrights', 'NNS'), ('.', '.')]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Dm0ALXENACDB",
+        "outputId": "5ec29e3f-e146-4f21-c80f-7d8a0cd814c8"
+      },
+      "source": [
+        "tanimla('Mehmet can speak English')"
+      ],
+      "execution_count": 126,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[('Mehmet', 'NNP'), ('can', 'MD'), ('speak', 'VB'), ('English', 'JJ')]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Q618LJApAIQ2",
+        "outputId": "e626c384-d77e-4fbc-ddc4-14a599413d6f"
+      },
+      "source": [
+        "tanimla('''Dear Dr. Mehmet Akif,Thank you for agreeing to review manuscript ... comments for the author.''')"
+      ],
+      "execution_count": 127,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[('Dear', 'NNP'), ('Dr.', 'NNP'), ('Mehmet', 'NNP'), ('Akif', 'NNP'), (',', ','), ('Thank', 'NNP'), ('you', 'PRP'), ('for', 'IN'), ('agreeing', 'VBG'), ('to', 'TO'), ('review', 'VB'), ('manuscript', 'NN'), ('...', ':'), ('comments', 'NNS'), ('for', 'IN'), ('the', 'DT'), ('author', 'NN'), ('.', '.')]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "9TWATwZoIvyZ"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}

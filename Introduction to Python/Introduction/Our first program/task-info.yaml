@@ -1,0 +1,47 @@
+type: edu
+files:
+- name: tests.py
+  visible: false
+  text: |+
+    from test_helper import run_common_tests, failed, passed, get_answer_placeholders
+
+
+    def test_initial():
+        window = get_answer_placeholders()[0]
+        if window == "type your name":
+            failed("You should modify the file")
+        else:
+            passed()
+
+    if __name__ == '__main__':
+        run_common_tests("You should enter your name")
+        test_initial()
+
+
+  learner_created: false
+- name: execute.svg
+  visible: false
+  text: <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path
+    d="m4 2 10 6-10 6z" fill="#59a869" fill-rule="evenodd"/></svg>
+  learner_created: false
+- name: hello_world.py
+  visible: true
+  placeholders:
+  - offset: 32
+    length: 5
+    placeholder_text: type your name
+    initial_state:
+      length: 14
+      offset: 32
+    initialized_from_dependency: false
+    possible_answer: Liana
+    selected: true
+    status: Solved
+  text: |
+    print("Hello, world! My name is type your name")
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 22 Oct 2020 08:00:51 UTC
+record: -1

@@ -1,0 +1,68 @@
+type: edu
+files:
+- name: self_parameter.py
+  visible: true
+  placeholders:
+  - offset: 184
+    length: 21
+    placeholder_text: add number to current
+    initial_state:
+      length: 21
+      offset: 184
+    initialized_from_dependency: false
+    possible_answer: self.current += amount
+    selected: true
+    status: Solved
+  text: |
+    class Complex:
+        def create(self, real_part, imag_part):
+            self.r = real_part
+            self.i = imag_part
+
+    class Calculator:
+        current = 0
+
+        def add(self, amount):
+            add number to current
+
+        def get_current(self):
+            return self.current
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |-
+    from test_helper import run_common_tests, get_answer_placeholders, passed, failed
+
+
+    def test_window():
+        window = get_answer_placeholders()[0]
+        if "self" in window and "amount" in window:
+            passed()
+        else:
+            failed("Access the current variable of the class using self.current")
+
+    def test_window2():
+        window = get_answer_placeholders()[0]
+        if "amount" in window:
+            passed()
+        else:
+            failed("Add the value of 'amount' to self.current")
+
+    def test_window3():
+        window = get_answer_placeholders()[0]
+        if "+=" in window or ("+" in window and "=" in window):
+            passed()
+        else:
+            failed("Add amount value to self.current")
+
+    if __name__ == '__main__':
+        run_common_tests()
+        test_window()
+        test_window2()
+        test_window3()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 22 Oct 2020 16:06:06 UTC
+record: -1

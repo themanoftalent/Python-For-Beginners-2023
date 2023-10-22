@@ -1,0 +1,91 @@
+type: edu
+files:
+- name: output.txt
+  visible: true
+  text: |
+    This is output file.
+  learner_created: false
+- name: write_to_file.py
+  visible: true
+  placeholders:
+  - offset: 92
+    length: 3
+    placeholder_text: add modifier
+    initial_state:
+      length: 12
+      offset: 92
+    initialized_from_dependency: false
+    possible_answer: '''a'''
+    selected: true
+    status: Solved
+  - offset: 124
+    length: 10
+    placeholder_text: add the whole zoo to the output.txt
+    initial_state:
+      length: 35
+      offset: 133
+    initialized_from_dependency: false
+    possible_answer: f.write(i)
+    selected: true
+    status: Solved
+  - offset: 140
+    length: 9
+    placeholder_text: close the file
+    initial_state:
+      length: 14
+      offset: 174
+    initialized_from_dependency: false
+    possible_answer: f.close()
+    selected: true
+    status: Solved
+  text: |
+    zoo = ["lion", "elephant", "monkey"]
+
+    if __name__ == "__main__":
+        f = open("output.txt", add modifier)
+
+        for i in zoo:
+            add the whole zoo to the output.txt
+
+        close the file
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import run_common_tests, get_answer_placeholders, passed, failed
+
+
+    def test_window():
+        window = get_answer_placeholders()[0]
+        if "'a'" in window or '"a"' in window:
+            passed()
+        else:
+            failed("Use 'a' modifier to append lines to the end of file")
+
+
+    def test_window1():
+        window = get_answer_placeholders()[1]
+        if "write" in window:
+            passed()
+        else:
+            failed("Use 'write' method")
+
+
+    def test_window3():
+        window = get_answer_placeholders()[2]
+        if "f" in window and "close" in window and "(" in window:
+            passed()
+        else:
+            failed("Call 'close' method")
+
+    if __name__ == '__main__':
+        run_common_tests()
+        test_window()
+        test_window1()
+        test_window3()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 22 Oct 2020 16:36:46 UTC
+record: -1

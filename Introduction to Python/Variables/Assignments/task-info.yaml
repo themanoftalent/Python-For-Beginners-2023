@@ -1,0 +1,58 @@
+type: edu
+files:
+- name: assignments.py
+  visible: true
+  placeholders:
+  - offset: 100
+    length: 2
+    placeholder_text: operator
+    initial_state:
+      length: 8
+      offset: 100
+    initialized_from_dependency: false
+    possible_answer: +=
+    selected: false
+    status: Solved
+  text: |
+    number = 9.0
+    print("number = " + str(number))
+
+    number -= 2
+    print("number = " + str(number))
+
+    number operator 5
+
+    print("number = " + str(number))
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |-
+    from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders
+
+
+    def test_value():
+        file = import_task_file()
+        if file.number == 12.0:
+            passed()
+        else:
+            failed("Use += operator")
+
+
+    def test_window():
+        window = get_answer_placeholders()[0]
+        if "+=" in window:
+            passed()
+        else:
+            failed("Use += operator")
+
+
+    if __name__ == '__main__':
+        run_common_tests("You should modify the file")
+        test_value()
+        test_window()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 22 Oct 2020 08:05:21 UTC
+record: -1

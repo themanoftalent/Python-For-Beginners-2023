@@ -1,0 +1,115 @@
+type: edu
+files:
+- name: my_module.py
+  visible: true
+  text: |-
+    """ documentation string for module my_module
+    This module contains hello_world function
+    """
+
+
+    def hello_world(name):
+        print("Hello, World! My name is %s" % name)
+  learner_created: false
+- name: imports.py
+  visible: true
+  placeholders:
+  - offset: 164
+    length: 16
+    placeholder_text: here import my_module
+    initial_state:
+      length: 21
+      offset: 164
+    initialized_from_dependency: false
+    possible_answer: import my_module
+    selected: true
+    status: Solved
+  - offset: 182
+    length: 46
+    placeholder_text: call function hello_world from my_module
+    initial_state:
+      length: 40
+      offset: 187
+    initialized_from_dependency: false
+    possible_answer: my_module.hello_world("John")
+    selected: true
+    status: Solved
+  text: |2
+
+    import calculator
+
+    calc = calculator.Calculator()    # create new instance of Calculator class defined in calculator module
+    calc.add(2)
+    print(calc.get_current())
+
+    here import my_module
+
+    call function hello_world from my_module
+  learner_created: false
+- name: calculator.py
+  visible: true
+  text: |-
+    """
+    This module contains Calculator class
+    """
+
+
+    class Calculator:
+        def __init__(self):
+            self.current = 0
+
+        def add(self, amount):
+            self.current += amount
+
+        def get_current(self):
+            return self.current
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import run_common_tests, get_answer_placeholders, passed, failed
+
+
+    def test_window():
+        window = get_answer_placeholders()[0]
+        if "import " in window:
+            passed()
+        else:
+            failed("Use 'import' keyword")
+
+
+    def test_window1():
+        window = get_answer_placeholders()[0]
+        if "my_module" in window:
+            passed()
+        else:
+            failed("Import module my_module")
+
+
+    def test_window2():
+        window = get_answer_placeholders()[0]
+        if "my_module.py" in window:
+            failed("Don't use the file extension here")
+        else:
+            passed()
+
+
+    def test_window3():
+        window = get_answer_placeholders()[1]
+        if "my_module" in window and "hello_world(" in window:
+            passed()
+        else:
+            failed("Call hello_world function using my_module.hello_world")
+
+    if __name__ == '__main__':
+        run_common_tests()
+        test_window1()
+        test_window()
+        test_window2()
+        test_window3()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 22 Oct 2020 16:08:12 UTC
+record: -1

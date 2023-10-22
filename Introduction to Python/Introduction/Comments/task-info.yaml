@@ -1,0 +1,35 @@
+type: edu
+files:
+- name: comments.py
+  visible: true
+  placeholders:
+  - offset: 137
+    length: 10
+    placeholder_text: add new comment here
+    initial_state:
+      length: 20
+      offset: 138
+    initialized_from_dependency: false
+    possible_answer: new comment
+    selected: true
+    status: Solved
+  text: |
+    # This is the comment for the comments.py file
+    print("Hello!")  # this comment is for the second line
+
+    print("# this is not a comment")
+    # add new comment here
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import run_common_tests
+
+    if __name__ == '__main__':
+        run_common_tests("You should type new comment")
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 22 Oct 2020 08:01:05 UTC
+record: -1

@@ -1,0 +1,49 @@
+type: edu
+files:
+- name: undefined_variable.py
+  visible: true
+  placeholders:
+  - offset: 26
+    length: 8
+    placeholder_text: other variable
+    initial_state:
+      length: 14
+      offset: 19
+    initialized_from_dependency: false
+    possible_answer: other_variable
+    selected: true
+    status: Solved
+  text: |
+    variable = 1
+    print(other variable)
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import test_is_not_empty, test_answer_placeholders_text_deleted, passed, failed, import_task_file
+
+
+    def test_is_identifier():
+        try:
+            import_task_file()
+        except NameError:
+            passed()
+            return
+        except SyntaxError:
+            failed("Used invalid identifier")
+            return
+        failed("Use undefined variable")
+
+
+    if __name__ == '__main__':
+        error_text = "You should type undefined variable here"
+
+        test_is_not_empty()
+        test_answer_placeholders_text_deleted(error_text)
+        test_is_identifier()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 22 Oct 2020 08:03:05 UTC
+record: -1

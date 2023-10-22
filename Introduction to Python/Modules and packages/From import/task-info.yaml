@@ -1,0 +1,78 @@
+type: edu
+files:
+- name: my_module.py
+  visible: true
+  text: |-
+    """ documentation string for module my_module
+    This module contains hello_world function
+    """
+
+
+    def hello_world():
+        return "Hello, World!"
+  learner_created: false
+- name: calculator.py
+  visible: true
+  text: |-
+    """
+    This module contains Calculator class
+    """
+
+
+    class Calculator:
+        def __init__(self):
+            self.current = 0
+
+        def add(self, amount):
+            self.current += amount
+
+        def get_current(self):
+            return self.current
+  learner_created: false
+- name: from_import.py
+  visible: true
+  placeholders:
+  - offset: 169
+    length: 51
+    placeholder_text: import hello_world from my_module
+    initial_state:
+      length: 33
+      offset: 169
+    initialized_from_dependency: false
+    possible_answer: from my_module import hello_world
+    selected: true
+    status: Solved
+  text: |2
+
+    from calculator import Calculator
+
+    calc = Calculator()    # here we can use Calculator class directly without prefix calculator.
+    calc.add(2)
+    print(calc.get_current())
+
+    import hello_world from my_module
+
+    print(hello_world())    # Note: hello_world function used without prefix
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import run_common_tests, failed, passed, get_answer_placeholders
+
+
+    def test_window():
+        window = get_answer_placeholders()[0]
+        if "from " in window:
+            passed()
+        else:
+            failed("Use hello_world imported from my_module")
+
+    if __name__ == '__main__':
+        run_common_tests()
+        test_window()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 22 Oct 2020 16:12:03 UTC
+record: -1

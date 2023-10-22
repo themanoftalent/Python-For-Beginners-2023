@@ -1,0 +1,58 @@
+type: edu
+files:
+- name: list_items.py
+  visible: true
+  placeholders:
+  - offset: 300
+    length: 15
+    placeholder_text: clear list
+    initial_state:
+      length: 10
+      offset: 300
+    initialized_from_dependency: false
+    possible_answer: animals[:] = []
+    selected: true
+    status: Solved
+  text: |
+    animals = ["elephant", "lion", "tiger", "giraffe", "monkey", "dog"]  # create new list
+    print(animals)
+
+    animals[1:3] = ["cat"]    # replace 2 items -- "lion" and "tiger" with one item -- "cat"
+    print(animals)
+
+    animals[1:3] = []     # remove 2 items -- "cat" and "giraffe" from the list
+    print(animals)
+
+    clear list
+    print(animals)
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import run_common_tests, failed, passed, import_task_file, get_answer_placeholders
+
+
+    def test_value():
+        file = import_task_file()
+        if hasattr(file, "animals") and not file.animals:
+            passed()
+        else:
+            failed("Clear animals list")
+
+    def test_window():
+        window = get_answer_placeholders()[0]
+        if "animals" in window:
+            passed()
+        else:
+            failed("Clear animals list")
+
+    if __name__ == '__main__':
+        run_common_tests("Use assignment to empty list")
+        test_window()
+        test_value()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 22 Oct 2020 08:26:28 UTC
+record: -1

@@ -1,0 +1,56 @@
+type: edu
+files:
+- name: break_keyword.py
+  visible: true
+  placeholders:
+  - offset: 407
+    length: 33
+    placeholder_text: exit loop if animal is "elephant"
+    initial_state:
+      length: 33
+      offset: 377
+    initialized_from_dependency: false
+    possible_answer: animal == "elephant"
+    selected: true
+    status: Solved
+  text: |
+    count = 0
+
+    while True:  # this condition cannot possibly be false
+        print(count)
+        count += 1
+        if count >= 5:
+            break           # exit loop if count >= 5
+
+
+    zoo = ["lion", "tiger", "elephant"]
+    while True:                         # this condition cannot possibly be false
+        animal = zoo.pop()       # extract one element from the list end
+        print(animal)
+        if exit loop if animal is "elephant":
+            break           # exit loop
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |-
+    from test_helper import run_common_tests, passed, failed, get_answer_placeholders
+
+
+    def test_window():
+        window = get_answer_placeholders()[0]
+        if "elephant" in window and "animal" in window:
+            passed()
+        else:
+            failed("Use == to check that animal is equal to 'elephant'")
+
+
+
+    if __name__ == '__main__':
+        run_common_tests()
+        test_window()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 20 Oct 2020 14:08:27 UTC
+record: -1

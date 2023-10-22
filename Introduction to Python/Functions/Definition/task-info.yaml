@@ -1,0 +1,73 @@
+type: edu
+files:
+- name: functions.py
+  visible: true
+  placeholders:
+  - offset: 256
+    length: 71
+    placeholder_text: define a function named 'fun' to replace three lines above
+    initial_state:
+      length: 58
+      offset: 256
+    initialized_from_dependency: false
+    possible_answer: 'def fun():'
+    selected: true
+    status: Solved
+  text: |
+    def hello_world():  # function named my_function
+        print("Hello, World!")
+
+    for i in range(5):
+        hello_world()   # call function defined above 5 times
+
+    print('I want to be a function')
+    print('I want to be a function')
+    print('I want to be a function')
+
+
+    define a function named 'fun' to replace three lines above
+        print('I want to be a function')
+
+    for i in range(3):
+        fun()
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |-
+    from test_helper import run_common_tests, failed, get_answer_placeholders, passed
+
+
+    def test_window():
+        window = get_answer_placeholders()[0]
+        if "fun" in window:
+            passed()
+        else:
+            failed("Name your function 'fun'")
+
+
+    def test_window1():
+        window = get_answer_placeholders()[0]
+        if "def " in window:
+            passed()
+        else:
+            failed("Use 'def' keyword to define a function")
+
+
+    def test_column():
+        window = get_answer_placeholders()[0]
+        if ":" in window:
+            passed()
+        else:
+            failed("Don't forget a colon at the end of the statement")
+
+    if __name__ == '__main__':
+        run_common_tests()
+        test_window()
+        test_column()
+        test_window1()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 20 Oct 2020 14:12:49 UTC
+record: -1

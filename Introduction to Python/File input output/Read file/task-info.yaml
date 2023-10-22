@@ -1,0 +1,110 @@
+type: edu
+files:
+- name: input.txt
+  visible: true
+  text: I am a temporary file. Maybe someday, I'll become a real file.
+  learner_created: false
+- name: input1.txt
+  visible: true
+  text: |-
+    My first line
+    My second line
+    My third line
+  learner_created: false
+- name: read_file.py
+  visible: true
+  placeholders:
+  - offset: 266
+    length: 11
+    placeholder_text: print each line
+    initial_state:
+      length: 15
+      offset: 266
+    initialized_from_dependency: false
+    possible_answer: print(line)
+    selected: true
+    status: Solved
+  - offset: 425
+    length: 4
+    placeholder_text: print only first line of f1
+    initial_state:
+      length: 27
+      offset: 410
+    initialized_from_dependency: false
+    possible_answer: print(f1.readline())
+    selected: true
+    status: Solved
+  - offset: 425
+    length: 14
+    placeholder_text: do not forget to close file
+    initial_state:
+      length: 27
+      offset: 439
+    initialized_from_dependency: false
+    possible_answer: f1.close()
+    selected: true
+    status: Solved
+  text: |2
+
+    f = open("input.txt", "r")   # here we open file "input.txt". Second argument used to identify that we want to read file
+                                 # Note: if you want to write to the file use "w" as second argument
+
+    for line in f.readlines():   # read lines
+        print each line
+
+    f.close()                   # It's important to close the file to free up any system resources.
+
+    f1 = open("input1.txt", "r")
+
+    print only first line of f1
+
+    do not forget to close file
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |-
+    from test_helper import run_common_tests, failed, passed, get_answer_placeholders, get_file_output
+
+
+    def test_window():
+        window = get_answer_placeholders()[0]
+        if "print" in window and "line" in window:
+            passed()
+        else:
+            failed("Use print function")
+
+
+    def test_window2():
+        default_error = "Use 'readline' method"
+        window = get_answer_placeholders()[1]
+        output = list(filter(lambda x: x != "", get_file_output()))
+        if len(output) == 2 and output[1] == "My first line":
+            passed()
+            return
+        if "print" not in window:
+            failed("Don't forget to print the line")
+            return
+        failed(default_error)
+
+
+    def test_window3():
+        window = get_answer_placeholders()[2]
+        if "close(" not in window:
+            failed("Call 'close' method")
+            return
+        if "f1" not in window:
+            failed("Close file f1")
+            return
+        passed()
+
+    if __name__ == '__main__':
+        run_common_tests()
+        test_window()
+        test_window2()
+        test_window3()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 22 Oct 2020 16:15:27 UTC
+record: -1

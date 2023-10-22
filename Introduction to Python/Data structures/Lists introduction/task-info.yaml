@@ -1,0 +1,53 @@
+type: edu
+files:
+- name: lists.py
+  visible: true
+  placeholders:
+  - offset: 70
+    length: 12
+    placeholder_text: slice
+    initial_state:
+      length: 5
+      offset: 70
+    initialized_from_dependency: false
+    possible_answer: squares[1:4]
+    selected: true
+    status: Solved
+  text: |
+    squares = [1, 4, 9, 16, 25]   # create new list
+    print(squares)
+
+    print(slice)
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |+
+    from test_helper import run_common_tests, get_answer_placeholders, passed, failed, get_file_output, test_file_importable
+
+
+    def test_value():
+        output = get_file_output()[1]
+        if "[4, 9, 16]" in output:
+            passed()
+        else:
+            failed("Use list slicing lst[index1:index2]")
+
+    def test_window():
+        window = get_answer_placeholders()[0]
+        if "squares" in window and "[" in window and "]" in window and ":" in window:
+            passed()
+        else:
+            failed("Use list slicing lst[index1:index2]")
+
+    if __name__ == '__main__':
+        test_file_importable()
+        test_value()
+        test_window()
+        run_common_tests("Use list slicing lst[index1:index2]")
+
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 22 Oct 2020 08:23:03 UTC
+record: -1

@@ -1,0 +1,50 @@
+type: edu
+files:
+- name: dict_key_value.py
+  visible: true
+  placeholders:
+  - offset: 217
+    length: 19
+    placeholder_text: phone_book values
+    initial_state:
+      length: 17
+      offset: 208
+    initialized_from_dependency: false
+    possible_answer: phone_book.values()
+    selected: true
+    status: Solved
+  text: |
+    phone_book = {"John": 123, "Jane": 234, "Jerard": 345}  # create new dictionary
+    print(phone_book)
+
+    # Add new item to the dictionary
+    phone_book["Jill"] = 456
+    print(phone_book)
+
+    print(phone_book.keys())
+
+    print(phone_book values)
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import run_common_tests, passed, failed, get_answer_placeholders
+
+
+    def test_window():
+        window = get_answer_placeholders()[0]
+        if "phone_book" in window and "values()" in window:
+            passed()
+        else:
+            failed("Use values() method")
+
+
+    if __name__ == '__main__':
+        run_common_tests()
+        test_window()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 22 Oct 2020 08:28:34 UTC
+record: -1

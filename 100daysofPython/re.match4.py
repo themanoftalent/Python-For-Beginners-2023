@@ -1,0 +1,42 @@
+##################################################
+#### **************************************** ####
+#### !/usr/bin/python3                        ####
+#### -*- coding: utf-8 -*-                    ####
+#### @Time    : 2023/20/10 11:40              ####
+#### @Author  : themanoftalent                ####
+#### @Site:https://github.com/themanoftalent  ####
+#### @Project : python-app                    ####
+#### **************************************** ####
+##################################################
+
+import re
+
+
+def test_patterns(text, patterns=[]):
+    """Given source text and a list of patterns, look for
+    matches for each pattern within the text and print(
+    them to stdout.
+    """
+    # Show the character positions and input text
+    print('*'*18)
+    print('Joining Strings with /',''.join(str(i / 10 or ' ') for i in range(len(text))))
+    print('*'*18)
+    print('Containing % :',''.join(str(i % 10) for i in range(len(text))))
+    print('*'*18)
+    print('Lets see the content ',text)
+
+    # Look for each pattern in the text and print( the results
+    for pattern in patterns:
+        print()
+        print('*'*18)
+        print('Matching "%s"' % pattern)
+        for match in re.finditer(pattern, text):
+            s = match.start()
+            e = match.end()
+            print('*'*18)
+            print('  %2d : %2d = "%s"' %(s, e - 1, text[s:e]))
+    return
+
+
+if __name__ == '__main__':
+    test_patterns('abbaaabbbbaaaaa', ['ab'])

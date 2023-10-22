@@ -1,0 +1,74 @@
+type: edu
+files:
+- name: string_formatting.py
+  visible: true
+  placeholders:
+  - offset: 132
+    length: 2
+    placeholder_text: special symbol
+    initial_state:
+      length: 14
+      offset: 132
+    initialized_from_dependency: false
+    possible_answer: '%d'
+    selected: true
+    status: Solved
+  - offset: 148
+    length: 2
+    placeholder_text: years
+    initial_state:
+      length: 5
+      offset: 160
+    initialized_from_dependency: false
+    possible_answer: 17
+    selected: true
+    status: Solved
+  text: |
+    name = "John"
+    print("Hello, PyCharm! My name is %s!" % name)     # Note: %s is inside the string, % is after the string
+
+    print("I'm special symbol years old" % years)
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import run_common_tests, passed, failed, get_answer_placeholders, import_task_file, get_file_output
+
+
+    def test_window1():
+        windows = get_answer_placeholders()
+
+        if windows[1].isdigit():
+            passed()
+            return
+        else:
+            output = get_file_output()
+            if len(output) > 1:
+                import re
+
+                p = re.compile("I'm (\d*) years old")
+                if p.match(output[1]) is not None:
+                    passed()
+                    return
+        failed("Print digit")
+
+
+    def test_window():
+        windows = get_answer_placeholders()
+
+        if windows[0] == "%d":
+            passed()
+        else:
+            failed("Use %d special symbol")
+
+
+    if __name__ == '__main__':
+        run_common_tests()
+        test_window()
+        test_window1()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 22 Oct 2020 08:21:54 UTC
+record: -1

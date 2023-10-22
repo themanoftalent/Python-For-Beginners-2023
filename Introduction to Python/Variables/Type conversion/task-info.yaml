@@ -1,0 +1,45 @@
+type: edu
+files:
+- name: type_cast.py
+  visible: true
+  placeholders:
+  - offset: 113
+    length: 17
+    placeholder_text: Convert float_number to integer
+    initial_state:
+      length: 31
+      offset: 113
+    initialized_from_dependency: false
+    possible_answer: int(float_number)
+    selected: false
+    status: Solved
+  text: |
+    number = 9
+    print(type(number))   # print type of variable "number"
+
+    float_number = 9.0
+    print(float_number)
+    print(Convert float_number to integer)
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |-
+    from test_helper import run_common_tests, get_answer_placeholders, passed, failed
+
+
+    def test_window():
+        window = get_answer_placeholders()[0]
+        if "int" in window and "float_number" in window:
+            passed()
+        else:
+            failed("Use the int() function")
+
+    if __name__ == '__main__':
+        run_common_tests()
+        test_window()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 22 Oct 2020 08:03:47 UTC
+record: -1

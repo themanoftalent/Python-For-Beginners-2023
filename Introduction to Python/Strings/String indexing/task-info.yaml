@@ -1,0 +1,54 @@
+type: edu
+files:
+- name: string_indexing.py
+  visible: true
+  placeholders:
+  - offset: 96
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 96
+    initialized_from_dependency: false
+    possible_answer: python[0]
+    selected: true
+    status: Solved
+  text: |
+    python = "Python"
+    print("h " + python[3])     # Note: string indexing starts with 0
+
+    p_letter = type here
+    print(p_letter)
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders
+
+
+    def test_window():
+        window = get_answer_placeholders()[0]
+        if "[" in window and "0" in window and "]" in window:
+            passed()
+        else:
+            failed("Use indexing")
+
+    def test_value():
+        file = import_task_file()
+        if hasattr(file, "p_letter") and file.p_letter == "P":
+            passed()
+        else:
+            failed("String index starts at 0.")
+
+
+    if __name__ == '__main__':
+        run_common_tests()
+
+        test_value()
+        test_window()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 22 Oct 2020 08:09:31 UTC
+record: -1

@@ -1,0 +1,11 @@
+The default mode is 'rt' (open for reading text). For binary random
+    access, the mode 'w+b' opens and truncates the file to 0 bytes, while
+    'r+b' opens the file without truncation. The 'x' mode implies 'w' and
+    raises an `FileExistsError` if the file already exists.
+
+    Python distinguishes between files opened in binary and text modes,
+    even when the underlying operating system doesn't. Files opened in
+    binary mode (appending 'b' to the mode argument) return contents as
+    bytes objects without any decoding. In text mode (the default, or when
+    't' is appended to the mode argument), the contents of the file are
+    returned as strings, the bytes having been first decoded using a

@@ -1,0 +1,56 @@
+type: edu
+files:
+- name: comparison_operators.py
+  visible: true
+  placeholders:
+  - offset: 187
+    length: 2
+    placeholder_text: operator
+    initial_state:
+      length: 8
+      offset: 188
+    initialized_from_dependency: false
+    possible_answer: '>'
+    selected: true
+    status: Solved
+  text: |
+    one = 1
+    two = 2
+    three = 3
+
+    print(one < two < three)  # This chained comparison means that the (one < two) and (two < three) comparisons are performed at the same time.
+
+    is_greater = three operator two
+    print(is_greater)
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |-
+    from test_helper import run_common_tests, passed, failed, import_task_file, get_answer_placeholders
+
+
+    def test_value():
+        file = import_task_file()
+        if file.is_greater:
+            passed()
+        else:
+            failed("Use > operator")
+
+
+    def test_window():
+        window = get_answer_placeholders()[0]
+        if ">" in window and ">=" not in window:
+            passed()
+        else:
+            failed("Use > operator")
+
+    if __name__ == '__main__':
+        run_common_tests("You should modify the file")
+        test_value()
+        test_window()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 22 Oct 2020 08:06:28 UTC
+record: -1

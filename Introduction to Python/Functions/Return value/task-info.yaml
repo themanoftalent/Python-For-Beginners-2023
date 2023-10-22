@@ -1,0 +1,108 @@
+type: edu
+files:
+- name: return_keyword.py
+  visible: true
+  placeholders:
+  - offset: 381
+    length: 1
+    placeholder_text: initialize variable b
+    initial_state:
+      length: 21
+      offset: 373
+    initialized_from_dependency: false
+    possible_answer: 1
+    selected: true
+    status: Solved
+  - offset: 453
+    length: 10
+    placeholder_text: update variable b
+    initial_state:
+      length: 17
+      offset: 465
+    initialized_from_dependency: false
+    possible_answer: b = a + b
+    selected: true
+    status: Solved
+  - offset: 474
+    length: 10
+    placeholder_text: update variable a
+    initial_state:
+      length: 17
+      offset: 491
+    initialized_from_dependency: false
+    possible_answer: a = tmp_var
+    selected: true
+    status: Solved
+  text: |
+    def sum_two_numbers(a, b):
+        return a + b            # return result to the function caller
+
+    c = sum_two_numbers(3, 12)  # assign result of function execution to variable 'c'
+
+
+    def fib(n):
+        """This is documentation string for function. It'll be available by fib.__doc__()
+        Return a list containing the Fibonacci series up to n."""
+        result = []
+        a = 1
+        b = initialize variable b
+        while a < n:
+            result.append(a)
+            tmp_var = b
+            update variable b
+            update variable a
+        return result
+
+    print(fib(10))
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |-
+    from test_helper import run_common_tests, get_answer_placeholders, passed, failed, import_task_file
+
+    def test_window1():
+        window = get_answer_placeholders()[0]
+        if "1" in window:
+            passed()
+        else:
+            failed("Initialize b with 1")
+
+
+    def test_window2():
+        window = get_answer_placeholders()[1]
+        if "b" in window and "a" in window:
+            passed()
+        else:
+            failed("Update b with a + b")
+
+    def test_window3():
+        window = get_answer_placeholders()[2]
+        if "tmp_var" in window:
+            passed()
+        else:
+            failed("Update a with tmp_var")
+
+    def test_function():
+        try:
+            my_file = import_task_file()
+            if hasattr(my_file, "fib") and my_file.fib(10) == [1, 1, 2, 3, 5, 8]:
+                passed()
+            else:
+                failed("Check your function for n = 10")
+        except:
+            failed("The file contains syntax errors")
+
+
+
+    if __name__ == '__main__':
+        run_common_tests()
+        test_window1()
+        test_window2()
+        test_window3()
+        test_function()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 22 Oct 2020 08:47:39 UTC
+record: -1

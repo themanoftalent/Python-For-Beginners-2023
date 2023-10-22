@@ -1,0 +1,16 @@
+name: dl
+
+channels:
+ - conda-forge
+ 
+dependencies:
+- tensorflow
+- keras
+- numpy
+- scipy
+- scikit-image
+- scikit-learn
+- matplotlib
+- jupyterlab
+- jupyter_contrib_nbextensions
+- pydot

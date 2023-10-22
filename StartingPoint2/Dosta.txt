@@ -1,0 +1,5 @@
+Keep going on babe
+
+How to Read a File line by line
+
+You can also read your .txt file line by line if your data is too big to read. This code will segregate your data in easy to ready mode

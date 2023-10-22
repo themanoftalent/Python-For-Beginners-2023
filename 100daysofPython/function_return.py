@@ -1,0 +1,13 @@
+#  !/usr/bin/python
+#  Copyright (c) akifciftci 2020. Aim to help new beginner to try hard and learn more.
+#
+
+def maximum(x, y):
+    if x > y:
+        return x
+    elif x == y:
+        return 'The numbers are equal'
+    else:
+        return y
+
+print(maximum(2, 3))

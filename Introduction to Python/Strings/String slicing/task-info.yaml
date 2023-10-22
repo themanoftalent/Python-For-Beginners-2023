@@ -1,0 +1,54 @@
+type: edu
+files:
+- name: slicing.py
+  visible: true
+  placeholders:
+  - offset: 169
+    length: 16
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 167
+    initialized_from_dependency: false
+    possible_answer: monty_python[6:]
+    selected: true
+    status: Solved
+  text: |
+    monty_python = "Monty Python"
+    monty = monty_python[:5]      # one or both index could be dropped. monty_python[:5] is equal to monty_python[0:5]
+    print(monty)
+    python = type here
+    print(python)
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |-
+    from test_helper import run_common_tests, failed, passed, import_task_file, get_answer_placeholders
+
+
+    def test_value():
+        file = import_task_file()
+        if hasattr(file, "python") and file.python == "Python":
+            passed()
+        else:
+            failed("Check indices used in slicing")
+
+
+    def test_monty_python():
+        window = get_answer_placeholders()[0]
+        if "monty_python" in window:
+            passed()
+        else:
+            failed("Use slicing")
+
+
+    if __name__ == '__main__':
+        run_common_tests()
+        test_value()
+        test_monty_python()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 22 Oct 2020 08:11:43 UTC
+record: -1

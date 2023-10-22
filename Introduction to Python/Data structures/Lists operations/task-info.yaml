@@ -1,0 +1,58 @@
+type: edu
+files:
+- name: list_operations.py
+  visible: true
+  placeholders:
+  - offset: 257
+    length: 24
+    placeholder_text: replace "dino" with "dinosaur"
+    initial_state:
+      length: 30
+      offset: 257
+    initialized_from_dependency: false
+    possible_answer: animals[-1] = "dinosaur"
+    selected: true
+    status: Solved
+  text: |
+    animals = ["elephant", "lion", "tiger", "giraffe"]  # create new list
+    print(animals)
+
+    animals += ["monkey", "dog"]    # add two items to the list
+    print(animals)
+
+    animals.append("dino")   # add one more item to the list using append() method
+    print(animals)
+
+    replace "dino" with "dinosaur"
+    print(animals)
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import run_common_tests, import_task_file, passed, failed, get_answer_placeholders
+
+
+    def test_value():
+        file = import_task_file()
+        if hasattr(file, "animals") and "dinosaur" in file.animals and not "dino" in file.animals:
+            passed()
+        else:
+            failed("Replace 'dino' with 'dinosaur'")
+
+    def test_window():
+        window = get_answer_placeholders()[0]
+        if "animals" in window and "[" in window:
+            passed()
+        else:
+            failed("Replace 'dino' with 'dinosaur'")
+
+    if __name__ == '__main__':
+        run_common_tests("Use indexing and assignment")
+        test_value()
+        test_window()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 22 Oct 2020 08:26:06 UTC
+record: -1

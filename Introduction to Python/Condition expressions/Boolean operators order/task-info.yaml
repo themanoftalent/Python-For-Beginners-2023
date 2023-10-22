@@ -1,0 +1,49 @@
+type: edu
+files:
+- name: boolean_order.py
+  visible: true
+  placeholders:
+  - offset: 108
+    length: 68
+    placeholder_text: '"name" is "Ellis" or not ("name" equal "John" and he is 17
+      years old)'
+    initial_state:
+      length: 69
+      offset: 108
+    initialized_from_dependency: false
+    possible_answer: name is "Ellis" or not (name is "John" and age == 17)
+    selected: true
+    status: Solved
+  text: |
+    name = "John"
+    age = 17
+
+    print(name == "John" or not age > 17)
+
+    print(name == "John" or not age > 17)
+
+    print("name" is "Ellis" or not ("name" equal "John" and he is 17 years old))
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |-
+    from test_helper import run_common_tests, failed, passed, get_answer_placeholders
+
+
+    def test_window():
+        window = get_answer_placeholders()[0]
+        if " and " in window and " or " in window and " not " in window:
+            passed()
+        else:
+            failed("Use 'and', 'or' and 'not' keywords")
+
+
+    if __name__ == '__main__':
+        run_common_tests("Use 'and', 'or' and 'not' keywords")
+        test_window()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 20 Oct 2020 13:59:02 UTC
+record: -1

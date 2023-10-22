@@ -1,0 +1,44 @@
+type: edu
+files:
+- name: tuples.py
+  visible: true
+  placeholders:
+  - offset: 161
+    length: 13
+    placeholder_text: alphabet length
+    initial_state:
+      length: 15
+      offset: 161
+    initialized_from_dependency: false
+    possible_answer: len(alphabet)
+    selected: true
+    status: Solved
+  text: |
+    alphabet = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
+                'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z')
+
+    print(alphabet length)
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |-
+    from test_helper import run_common_tests, passed, failed, get_answer_placeholders
+
+
+    def test_window():
+        window = get_answer_placeholders()[0]
+        if "len(" in window:
+            passed()
+        else:
+            failed("Use len() function")
+
+
+    if __name__ == '__main__':
+        run_common_tests("Use len() function")
+        test_window()
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 22 Oct 2020 08:26:41 UTC
+record: -1
