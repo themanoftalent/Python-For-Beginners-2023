@@ -1,0 +1,3 @@
+[submodule "CodePythonForBeginners"]
+	path = CodePythonForBeginners
+	url = git@github.com:themanoftalent/Python-For-Beginners-2023.git
