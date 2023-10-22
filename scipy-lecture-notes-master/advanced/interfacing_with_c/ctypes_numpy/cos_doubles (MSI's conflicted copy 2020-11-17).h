@@ -1,5 +1,0 @@
-XSym
-0029
-1fb83796e582212f90eddf6fdd87d576
-../numpy_shared/cos_doubles.h
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  

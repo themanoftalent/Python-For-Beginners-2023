@@ -1,2 +1,0 @@
-scrabble-games/scrabble_games.csv filter=lfs diff=lfs merge=lfs -text
-*science-giving/*.csv filter=lfs diff=lfs merge=lfs -text

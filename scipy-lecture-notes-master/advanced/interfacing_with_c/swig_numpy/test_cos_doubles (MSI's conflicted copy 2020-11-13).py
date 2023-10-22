@@ -1,5 +1,0 @@
-XSym
-0035
-a87e5555d0eb73a84e87cc2d798c4f3e
-../numpy_shared/test_cos_doubles.py
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
