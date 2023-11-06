@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2c0cca59-f308-4a63-bc13-e82e01e08d66" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_heads_or_tails.coverage" NAME="ds_heads_or_tails Coverage Results" MODIFIED="1522527194107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$function_global.coverage" NAME="function_global Coverage Results" MODIFIED="1522401541226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$boss.coverage" NAME="boss Coverage Results" MODIFIED="1522956722561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$LambdaFunction.coverage" NAME="LambdaFunction Coverage Results" MODIFIED="1523392947424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$recursive_function.coverage" NAME="recursive_function Coverage Results" MODIFIED="1523353597947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$converting_miles_to_km.coverage" NAME="converting_miles_to_km Coverage Results" MODIFIED="1522441789156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$stdlib_logging.coverage" NAME="stdlib_logging Coverage Results" MODIFIED="1523561548320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$define__kwargs.coverage" NAME="define**kwargs Coverage Results" MODIFIED="1523343896782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$open_read_a_file.coverage" NAME="open_read_a_file Coverage Results" MODIFIED="1523290370973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$constructor.coverage" NAME="constructor Coverage Results" MODIFIED="1523348276947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_using_list.coverage" NAME="ds_using_list Coverage Results" MODIFIED="1522149623521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$pathlibExist.coverage" NAME="pathlibExist Coverage Results" MODIFIED="1523290905616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$pendam.coverage" NAME="pendam Coverage Results" MODIFIED="1523906798933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/existra" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_class4.coverage" NAME="ds_class4 Coverage Results" MODIFIED="1523688810450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/existra" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$function_param.coverage" NAME="function_param Coverage Results" MODIFIED="1522401727758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$create_matrix.coverage" NAME="create_matrix Coverage Results" MODIFIED="1523621148779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/existra" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$function_varargs.coverage" NAME="function_varargs Coverage Results" MODIFIED="1522402284461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_strings.coverage" NAME="ds_strings Coverage Results" MODIFIED="1522657119958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$open_texts.coverage" NAME="open_texts Coverage Results" MODIFIED="1523261799608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_check_name.coverage" NAME="ds_check_name Coverage Results" MODIFIED="1522505083058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_reference.coverage" NAME="ds_reference Coverage Results" MODIFIED="1521186783933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$break.coverage" NAME="break Coverage Results" MODIFIED="1522505971461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$module_using_name.coverage" NAME="module_using_name Coverage Results" MODIFIED="1521533421861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$studans.coverage" NAME="studans Coverage Results" MODIFIED="1523866805444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/existra" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$function_docstring.coverage" NAME="function_docstring Coverage Results" MODIFIED="1522401196177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_not_exist.coverage" NAME="ds_not_exist Coverage Results" MODIFIED="1522313544267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$fibo_deneme.coverage" NAME="fibo_deneme Coverage Results" MODIFIED="1524126296115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/existra" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$number_of_the_words.coverage" NAME="number_of_the_words Coverage Results" MODIFIED="1523866997560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/existra" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$simple_calculator.coverage" NAME="simple_calculator Coverage Results" MODIFIED="1522356124730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$searchnew_1.coverage" NAME="searchnew_1 Coverage Results" MODIFIED="1522819476164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_str_methods.coverage" NAME="ds_str_methods Coverage Results" MODIFIED="1522399818743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$function_return.coverage" NAME="function_return Coverage Results" MODIFIED="1522401749940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$more_decorator.coverage" NAME="more_decorator Coverage Results" MODIFIED="1521533530437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_phone_balance.coverage" NAME="ds_phone_balance Coverage Results" MODIFIED="1522507510450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$module_using_sys.coverage" NAME="module_using_sys Coverage Results" MODIFIED="1521533438062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$button.coverage" NAME="button Coverage Results" MODIFIED="1522874520632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$while.coverage" NAME="while Coverage Results" MODIFIED="1521534442505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_class2.coverage" NAME="ds_class2 Coverage Results" MODIFIED="1523564000475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/existra" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_reference3.coverage" NAME="ds_reference3 Coverage Results" MODIFIED="1521534988474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$if.coverage" NAME="if Coverage Results" MODIFIED="1521528813242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_elif2.coverage" NAME="ds_elif2 Coverage Results" MODIFIED="1522312409524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$htmlList.coverage" NAME="htmlList Coverage Results" MODIFIED="1523086262920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$def_open_file.coverage" NAME="def_open_file Coverage Results" MODIFIED="1523289826905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$derek_cheetSheet.coverage" NAME="derek_cheetSheet Coverage Results" MODIFIED="1522505220807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$guessing_game.coverage" NAME="guessing_game Coverage Results" MODIFIED="1523353757077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$remainder___.coverage" NAME="remainder%%% Coverage Results" MODIFIED="1523100414819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_using_tuple.coverage" NAME="ds_using_tuple Coverage Results" MODIFIED="1522149940043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$flying_circus.coverage" NAME="flying_circus Coverage Results" MODIFIED="1523099103250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_using_dict.coverage" NAME="ds_using_dict Coverage Results" MODIFIED="1522400360582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$palindrome.coverage" NAME="palindrome Coverage Results" MODIFIED="1523866940513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/existra" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_seq.coverage" NAME="ds_seq Coverage Results" MODIFIED="1521188011777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_find_.coverage" NAME="ds_find_ Coverage Results" MODIFIED="1522527706412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_calculate_area.coverage" NAME="ds_calculate_area Coverage Results" MODIFIED="1522441958816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$function_default.coverage" NAME="function_default Coverage Results" MODIFIED="1522400585152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$lambda_1.coverage" NAME="lambda_1 Coverage Results" MODIFIED="1523344083948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$fanktions.coverage" NAME="fanktions Coverage Results" MODIFIED="1523361586983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$a_directory_exist.coverage" NAME="a_directory_exist Coverage Results" MODIFIED="1523290955092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_if_guessing.coverage" NAME="ds_if_guessing Coverage Results" MODIFIED="1523292810637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$classHideData.coverage" NAME="classHideData Coverage Results" MODIFIED="1523342153336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_using_dict3.coverage" NAME="ds_using_dict3 Coverage Results" MODIFIED="1522149264007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$remove_duplicate.coverage" NAME="remove_duplicate Coverage Results" MODIFIED="1523047007277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$deneme.coverage" NAME="deneme Coverage Results" MODIFIED="1523291728651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$dictionaryofDict.coverage" NAME="dictionaryofDict Coverage Results" MODIFIED="1523098113150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$numpy_Exercise.coverage" NAME="numpy_Exercise Coverage Results" MODIFIED="1523865899479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/existra" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_function3.coverage" NAME="ds_function3 Coverage Results" MODIFIED="1523475108192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_garden_calendar.coverage" NAME="ds_garden_calendar Coverage Results" MODIFIED="1522264630676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_prize_func.coverage" NAME="ds_prize_func Coverage Results" MODIFIED="1522265493518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$open_pdf_io.coverage" NAME="open_pdf_io Coverage Results" MODIFIED="1523263674590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$function2.coverage" NAME="function2 Coverage Results" MODIFIED="1522149201528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_conditions.coverage" NAME="ds_conditions Coverage Results" MODIFIED="1522956759750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$numpy_arrays.coverage" NAME="numpy_arrays Coverage Results" MODIFIED="1523865499131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/existra" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_find_emails.coverage" NAME="ds_find_emails Coverage Results" MODIFIED="1522528205150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$file_input_output.coverage" NAME="file_input_output Coverage Results" MODIFIED="1523189242579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_func_potatos.coverage" NAME="ds_func_potatos Coverage Results" MODIFIED="1522441255474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$createClass.coverage" NAME="createClass Coverage Results" MODIFIED="1522505963488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$importing_my_fonk.coverage" NAME="importing_my_fonk Coverage Results" MODIFIED="1523907158951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fonk" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$tuples.coverage" NAME="tuples Coverage Results" MODIFIED="1523470827030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$read_a_file.coverage" NAME="read_a_file Coverage Results" MODIFIED="1523192941618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_calculate.coverage" NAME="ds_calculate Coverage Results" MODIFIED="1522399313766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$packing_unpacking.coverage" NAME="packing_unpacking Coverage Results" MODIFIED="1522659243145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$_case.coverage" NAME="#case Coverage Results" MODIFIED="1522730461375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_using_dict2.coverage" NAME="ds_using_dict2 Coverage Results" MODIFIED="1522400552541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$try_except.coverage" NAME="try_except Coverage Results" MODIFIED="1522650981649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$bank_customer.coverage" NAME="bank_customer Coverage Results" MODIFIED="1523952813937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/customer" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$regular_expres.coverage" NAME="regular_expres Coverage Results" MODIFIED="1522747879485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$fn_donk.coverage" NAME="fn_donk Coverage Results" MODIFIED="1523907016037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fonk" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$numpy_arrays2.coverage" NAME="numpy_arrays2 Coverage Results" MODIFIED="1523867316826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/existra" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$continue.coverage" NAME="continue Coverage Results" MODIFIED="1521186270956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$dictionary_iterating.coverage" NAME="dictionary_iterating Coverage Results" MODIFIED="1523087825148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_str_methods2.coverage" NAME="ds_str_methods2 Coverage Results" MODIFIED="1522313645731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$Continoue.coverage" NAME="Continoue Coverage Results" MODIFIED="1521112336437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$dictionaryDs.coverage" NAME="dictionaryDs Coverage Results" MODIFIED="1523086616485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$for.coverage" NAME="for Coverage Results" MODIFIED="1521532504459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$multiple_args.coverage" NAME="multiple_args Coverage Results" MODIFIED="1523343378470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$generate_random_numbers.coverage" NAME="generate_random_numbers Coverage Results" MODIFIED="1523342047360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_tuples.coverage" NAME="ds_tuples Coverage Results" MODIFIED="1523099933525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_class3.coverage" NAME="ds_class3 Coverage Results" MODIFIED="1523648093209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/existra" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$tuples_non_mutable.coverage" NAME="tuples-non-mutable Coverage Results" MODIFIED="1523614063475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/existra" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$dictionary_country.coverage" NAME="dictionary_country Coverage Results" MODIFIED="1523087324750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_return.coverage" NAME="ds_return Coverage Results" MODIFIED="1522508582348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_global_var.coverage" NAME="ds_global_var Coverage Results" MODIFIED="1522656833186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$calendar.coverage" NAME="calendar Coverage Results" MODIFIED="1522730271298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$function1.coverage" NAME="function1 Coverage Results" MODIFIED="1522150127934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$function_keyword.coverage" NAME="function_keyword Coverage Results" MODIFIED="1523475183303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$writingatable.coverage" NAME="writingatable Coverage Results" MODIFIED="1523476245403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_array.coverage" NAME="ds_array Coverage Results" MODIFIED="1522313215989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_class.coverage" NAME="ds_class Coverage Results" MODIFIED="1523562963474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/existra" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$factorials.coverage" NAME="factorials Coverage Results" MODIFIED="1523392525155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+    <SUITE FILE_PATH="coverage/MACAOS_03_2018$ds_reference2.coverage" NAME="ds_reference2 Coverage Results" MODIFIED="1521186969953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programs" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="MACAOS.03.2018" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="bank_customer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/customer/bank_customer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fibo_deneme.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/existra/fibo_deneme.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>phone_balance</find>
+      <find>banka</find>
+      <find>bank</find>
+      <find>bank_balance</find>
+      <find>number</find>
+      <find>free_up_to_age</find>
+      <find>child_up_to_age</find>
+      <find>senior_from_age</find>
+      <find>ticket_price</find>
+      <find>The</find>
+      <find>choice</find>
+      <find>print</find>
+      <find>...</find>
+      <find>ogrenciler</find>
+      <find>quote</find>
+      <find>result</find>
+      <find>def</find>
+      <find>:</find>
+      <find>&gt;&gt;&gt;</find>
+      <find>till_text</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>bakiye</replace>
+      <replace>banka_hesap</replace>
+      <replace>sayi</replace>
+      <replace>cocuk_bedava</replace>
+      <replace>ogrenci</replace>
+      <replace>emekli</replace>
+      <replace>bilet_ederi</replace>
+      <replace>choose</replace>
+      <replace>print(</replace>
+      <replace>studs</replace>
+      <replace>yazi</replace>
+      <replace>sonuc</replace>
+      <replace>size_to_read</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/programs</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/programs/dictionary_country.py" />
+        <option value="$PROJECT_DIR$/programs/dictionary_iterating.py" />
+        <option value="$PROJECT_DIR$/programs/dictionaryofDict.py" />
+        <option value="$PROJECT_DIR$/programs/flying_circus.py" />
+        <option value="$PROJECT_DIR$/programs/ds_tuples.py" />
+        <option value="$PROJECT_DIR$/programs/remainder.py" />
+        <option value="$PROJECT_DIR$/programs/remainder%%%.py" />
+        <option value="$PROJECT_DIR$/programs/file_input_output.py" />
+        <option value="$PROJECT_DIR$/programs/test1.txt" />
+        <option value="$PROJECT_DIR$/programs/read_a_file.py" />
+        <option value="$PROJECT_DIR$/programs/open_texts.py" />
+        <option value="$PROJECT_DIR$/programs/open_pdf_io.py" />
+        <option value="$PROJECT_DIR$/programs/Dosya.txt" />
+        <option value="$PROJECT_DIR$/programs/Dosta.txt" />
+        <option value="$PROJECT_DIR$/programs/def_open_file.py" />
+        <option value="$PROJECT_DIR$/programs/open_read_a_file.py" />
+        <option value="$PROJECT_DIR$/programs/pathlibExist.py" />
+        <option value="$PROJECT_DIR$/programs/a_directory_exist.py" />
+        <option value="$PROJECT_DIR$/programs/deneme.py" />
+        <option value="$PROJECT_DIR$/programs/ds_if_guessing.py" />
+        <option value="$PROJECT_DIR$/programs/generate_random_numbers.py" />
+        <option value="$PROJECT_DIR$/programs/classHideData.py" />
+        <option value="$PROJECT_DIR$/programs/multiple_args.py" />
+        <option value="$PROJECT_DIR$/programs/lambda_1.py" />
+        <option value="$PROJECT_DIR$/programs/constructor.py" />
+        <option value="$PROJECT_DIR$/programs/define**kwargs.py" />
+        <option value="$PROJECT_DIR$/programs/recursive_function.py" />
+        <option value="$PROJECT_DIR$/programs/guessing_game.py" />
+        <option value="$PROJECT_DIR$/programs/fanktions.py" />
+        <option value="$PROJECT_DIR$/programs/factorials.py" />
+        <option value="$PROJECT_DIR$/programs/LambdaFunction.py" />
+        <option value="$PROJECT_DIR$/programs/tuples.py" />
+        <option value="$PROJECT_DIR$/programs/ds_function3.py" />
+        <option value="$PROJECT_DIR$/programs/writingatable.py" />
+        <option value="$PROJECT_DIR$/existra/ds_class.py" />
+        <option value="$PROJECT_DIR$/existra/ds_class2.py" />
+        <option value="$PROJECT_DIR$/existra/tuples-non-mutable.py" />
+        <option value="$PROJECT_DIR$/existra/create_matrix.py" />
+        <option value="$PROJECT_DIR$/existra/ds_class3.py" />
+        <option value="$PROJECT_DIR$/existra/ds_class4.py" />
+        <option value="$PROJECT_DIR$/existra/numpy_arrays.py" />
+        <option value="$PROJECT_DIR$/existra/numpy_Exercise.py" />
+        <option value="$PROJECT_DIR$/existra/studans.py" />
+        <option value="$PROJECT_DIR$/existra/palindrome.py" />
+        <option value="$PROJECT_DIR$/existra/number_of_the_words.py" />
+        <option value="$PROJECT_DIR$/existra/numpy_arrays2.py" />
+        <option value="$PROJECT_DIR$/existra/pendam.py" />
+        <option value="$PROJECT_DIR$/fonk/fn_donk.py" />
+        <option value="$PROJECT_DIR$/fonk/importing_my_fonk.py" />
+        <option value="$PROJECT_DIR$/customer/bank_customer.py" />
+        <option value="$PROJECT_DIR$/existra/fibo_deneme.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="828" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MACAOS.03.2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MACAOS.03.2018" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MACAOS.03.2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MACAOS.03.2018" type="462c0819:PsiDirectoryNode" />
+              <item name="customer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MACAOS.03.2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MACAOS.03.2018" type="462c0819:PsiDirectoryNode" />
+              <item name="existra" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MACAOS.03.2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MACAOS.03.2018" type="462c0819:PsiDirectoryNode" />
+              <item name="programs" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/programs" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/existra" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.fibo_deneme">
+    <configuration name="bank_customer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MACAOS.03.2018" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/customer" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/customer/bank_customer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="fibo_deneme" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MACAOS.03.2018" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/existra" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/existra/fibo_deneme.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="fn_donk" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MACAOS.03.2018" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fonk" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fonk/fn_donk.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="importing_my_fonk" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MACAOS.03.2018" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fonk" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fonk/importing_my_fonk.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="pendam" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MACAOS.03.2018" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/existra" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/existra/pendam.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.pendam" />
+      <item itemvalue="Python.fn_donk" />
+      <item itemvalue="Python.importing_my_fonk" />
+      <item itemvalue="Python.bank_customer" />
+      <item itemvalue="Python.fibo_deneme" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.fibo_deneme" />
+        <item itemvalue="Python.bank_customer" />
+        <item itemvalue="Python.importing_my_fonk" />
+        <item itemvalue="Python.fn_donk" />
+        <item itemvalue="Python.pendam" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c0cca59-f308-4a63-bc13-e82e01e08d66" name="Default" comment="" />
+      <created>1521110984910</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1521110984910</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="828" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32968536" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32968536" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29411766" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32968536" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32968536" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16452074" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24964234" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994528" />
+      <window_info id="Favorites" order="2" side_tool="true" weight="0.3297568" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnlyOnFirst="true" notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+            <option name="notifyOnlyOnFirst" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/programs/flying_circus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/ds_tuples.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/remainder%%%.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/test1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/file_input_output.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="53" column="15" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/regular_expres.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="41" selection-start-line="41" selection-end-line="49" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/read_a_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/open_texts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/Dosya.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/Dosta.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="135" selection-start-line="4" selection-start-column="135" selection-end-line="4" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/def_open_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="38" column="100" selection-start-line="38" selection-start-column="100" selection-end-line="38" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/open_pdf_io.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/a_directory_exist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/deneme.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/pathlibExist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/open_read_a_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="27" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/generate_random_numbers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/classHideData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/multiple_args.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/lambda_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/define**kwargs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/constructor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="62" column="37" lean-forward="true" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/recursive_function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/guessing_game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-87">
+          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/fanktions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/factorials.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/LambdaFunction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/tuples.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="10" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/writingatable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/function_keyword.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/ds_function3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/stdlib_logging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="43" lean-forward="true" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/create_matrix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/tuples-non-mutable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/existra/ds_class2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/dictionary_iterating.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programs/dictionary_country.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="786" selection-start-line="786" selection-end-line="790" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/existra/ds_class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/existra/ds_class4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/existra/ds_class3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/existra/studans.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/existra/number_of_the_lines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/existra/palindrome.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/existra/numpy_Exercise.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/existra/numpy_arrays.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/existra/numpy_arrays2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/existra/pendam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fonk/fn_donk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fonk/importing_my_fonk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customer/bank_customer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/existra/fibo_deneme.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
