@@ -1,6 +1,0 @@
-Collecting pyrfr
-  Using cached pyrfr-0.8.0.tar.gz (293 kB)
-Using legacy 'setup.py install' for pyrfr, since package 'wheel' is not installed.
-Installing collected packages: pyrfr
-    Running setup.py install for pyrfr: started
-    Running setup.py install for pyrfr: finished with status 'error'
