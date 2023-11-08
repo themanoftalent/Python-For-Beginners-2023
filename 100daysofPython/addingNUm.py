@@ -1,6 +1,13 @@
-#  !/usr/bin/python
-#  Copyright (c) akifciftci 2019. Aim to help new beginner to try hard and learn more.
-#
+##################################################
+#### **************************************** ####
+#### !/usr/bin/python3                        ####
+#### -*- coding: utf-8 -*-                    ####
+#### @Time    : 2023/20/10 11:40              ####
+#### @Author  : themanoftalent                ####
+#### @Site:https://github.com/themanoftalent  ####
+#### @Project : python-app                    ####
+#### **************************************** ####
+##################################################
 
 num1 = 1.7
 num2 = 6.3

@@ -1,20 +1,17 @@
+##################################################
+#### **************************************** ####
+#### !/usr/bin/python3                        ####
+#### -*- coding: utf-8 -*-                    ####
+#### @Time    : 2023/20/10 11:40              ####
+#### @Author  : themanoftalent                ####
+#### @Site:https://github.com/themanoftalent  ####
+#### @Project : python-app                    ####
+#### **************************************** ####
+##################################################
 
 
+import sys
+import os
 
-
-from django.shortcuts import render
-
-from cart.models import Goods
-
-
-def index(request):
-    goods_list = list(Goods.objects.all())
-    return render(request, 'goods.html', {'goods_list': goods_list})
-
-
-def show_cart(request):
-    return render(request, 'cart.html')
-
-
-def add_to_cart(request, no):
-    pass
+print(sys.version)
+print(sys.version_info)
