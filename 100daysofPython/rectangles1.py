@@ -1,4 +1,3 @@
-
 """
     -Write a function to find the rectangular intersection of two given love rectangles.
     -rectangles are always "straight" and never "diagonal

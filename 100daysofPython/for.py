@@ -1,18 +1,21 @@
-#! /usr/bin/python
+# edited for python 3 and some basic arrangments
+# !editor :Barish
+# working with list
 
-#  !/usr/bin/python
-#  Copyright (c) akifciftci 2020. Aim to help new beginner to try hard and learn more.
-#
+words = ['cat', 'window', 'car', 'defenestrate', 'car']
+for w in words:
+    print(w, len(w))
 
-# Filename: for.py
+print(type(words))
+words.append('dog')
+print(words)
 
-for i in range(1,5):
-	print(i)
-else:
-	print('loop is over')
+words.remove('cat')
+print(words)
 
-for j in range(1, 5, 2):
-	print(j)
-else:
-	print('loop2 is over')
+words.extend('starbucks')  # extend the word like 's', 't', 'a', 'r', 'b', 'u', 'c', 'k', 's']
+print(words)
+
+words.insert(2, 'Stars')  # 0 1 den sonra
+print(words)
 

@@ -1,30 +1,26 @@
-#  !/usr/bin/python
-#  Copyright (c) akifciftci 2020. Aim to help new beginner to try hard and learn more.
-#
+numbers = list()
+for i in range(0, 3):
+    inputNr = int(input("Enter a number: "))
+    if(inputNr == -99):
+        break
 
-import random
-import _random
+    numbers.append(inputNr)
 
-def playGuess():
-    print ('Type a number betwen 1-100 ')
+#Then we take all of the numbers and calculate the sum and avg on them
+sum = 0
+for j, val in enumerate(numbers):
+    sum += val
 
-    number =random.randint(1,101)
-    guess = 0
-
-    while number!=guess:
-        print()
-        if number>guess:
-            print('too gigh')
-            guess+=1
-        elif number<guess:
-            print('too low')
-            guess+=1
-        else:
-            print('Enter an int')
-            break
+print("The total sum is: " + str(sum))
+print("The avg is: " + str(sum / len(numbers)))
 
 
+num = int(input('How many numbers: '))
+total_sum = 0
 
+for n in range(num):
+    numbers = float(input('Enter number : '))
+    total_sum += numbers
 
-playGuess()
-
+avg = total_sum/num
+print('Average of ', num, ' numbers is :', avg)

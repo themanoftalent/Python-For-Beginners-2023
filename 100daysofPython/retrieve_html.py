@@ -1,14 +1,3 @@
-##################################################
-#### **************************************** ####
-#### !/usr/bin/python3                        ####
-#### -*- coding: utf-8 -*-                    ####
-#### @Time    : 2023/20/10 11:40              ####
-#### @Author  : themanoftalent                ####
-#### @Site:https://github.com/themanoftalent  ####
-#### @Project : python-app                    ####
-#### **************************************** ####
-##################################################
-
 #5. Extract all the text portions between the tags from the following
 # HTML page: https://raw.githubusercontent.com/selva86/datasets/master/sample.html
 import re

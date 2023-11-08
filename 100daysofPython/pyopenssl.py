@@ -1,14 +1,3 @@
-##################################################
-#### **************************************** ####
-#### !/usr/bin/python3                        ####
-#### -*- coding: utf-8 -*-                    ####
-#### @Time    : 2023/20/10 11:40              ####
-#### @Author  : themanoftalent                ####
-#### @Site:https://github.com/themanoftalent  ####
-#### @Project : python-app                    ####
-#### **************************************** ####
-##################################################
-
 '''SSL with SNI_-support for Python 2. Follow these instructions if you would
 like to verify SSL certificates in Python 2. Note, the default libraries do
 *not* do certificate checking; you need to do additional work to validate

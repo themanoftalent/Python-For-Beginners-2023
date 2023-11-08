@@ -1,6 +1,0 @@
-HTTP METHODS
-
-GET         <url>/users/123
-PUT
-POST
-DELETE

@@ -1,9 +1,8 @@
-while True:
-    s = input('Enter something : ')
-    if s == 'quit':
-        break
-    if len(s) < 3:
-        print('Too small')
+#edited for python 3 and some basic arrangments
+#!editor :Barish
+
+for num in range(2, 10):
+    if num % 2 == 0:
+        print ("Found an even number", num)
         continue
-    print('Input is of sufficient length')
-    # Do other kinds of processing here...
+    print( "Found a number", num)

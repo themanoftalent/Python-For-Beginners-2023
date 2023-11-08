@@ -1,13 +1,10 @@
-##################################################
-#### **************************************** ####
-#### !/usr/bin/python3                        ####
-#### -*- coding: utf-8 -*-                    ####
-#### @Time    : 2023/20/10 11:40              ####
-#### @Author  : themanoftalent                ####
-#### @Site:https://github.com/themanoftalent  ####
-#### @Project : python-app                    ####
-#### **************************************** ####
-##################################################
+# -*- coding: utf-8 -*-
+#
+# Copyright (C) 2012 The Python Software Foundation.
+# See LICENSE.txt and CONTRIBUTORS.txt.
+#
+"""Utility functions for copying and archiving files and directory trees.
+
 XXX The functions here don't copy the resource fork or other metadata on Mac.
 
 """

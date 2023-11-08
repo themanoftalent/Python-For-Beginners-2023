@@ -1,13 +1,6 @@
-##################################################
-#### **************************************** ####
-#### !/usr/bin/python3                        ####
-#### -*- coding: utf-8 -*-                    ####
-#### @Time    : 2023/20/10 11:40              ####
-#### @Author  : themanoftalent                ####
-#### @Site:https://github.com/themanoftalent  ####
-#### @Project : python-app                    ####
-#### **************************************** ####
-##################################################
+# This file is dual licensed under the terms of the Apache License, Version
+# 2.0, and the BSD License. See the LICENSE file in the root of this repository
+# for complete details.
 from __future__ import absolute_import, division, print_function
 
 import collections

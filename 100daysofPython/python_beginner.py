@@ -1,15 +1,4 @@
-##################################################
-#### **************************************** ####
-#### !/usr/bin/python3                        ####
-#### -*- coding: utf-8 -*-                    ####
-#### @Time    : 2023/20/10 11:40              ####
-#### @Author  : themanoftalent                ####
-#### @Site:https://github.com/themanoftalent  ####
-#### @Project : python-app                    ####
-#### **************************************** ####
-##################################################
-
-
+#editor and coder=mynonofficial
 
 
 """number"""
@@ -512,7 +501,7 @@ print(dir(builtins))  # to print all built-in modules, import Module 02 first
 
 """package"""
 # package is a collection of modules; dotted name: A.B means a sub-module named B in a package named A
-# the 1__init__.py defines a list __all__ that contains module names being imported when calling: from XX import *
+# the __init__.py defines a list __all__ that contains module names being imported when calling: from XX import *
 # __path__ gives a predefined path before running the module that might be modified
 
 """string formatting"""
@@ -640,7 +629,7 @@ print(dir(builtins))  # to print all built-in modules, import Module 02 first
 
 """package"""
 # package is a collection of modules; dotted name: A.B means a sub-module named B in a package named A
-# the 1__init__.py defines a list __all__ that contains module names being imported when calling: from XX import *
+# the __init__.py defines a list __all__ that contains module names being imported when calling: from XX import *
 # __path__ gives a predefined path before running the module that might be modified
 
 """string formatting"""

@@ -1,26 +1,4 @@
-##################################################
-#### **************************************** ####
-#### !/usr/bin/python3                        ####
-#### -*- coding: utf-8 -*-                    ####
-#### @Time    : 2023/20/10 11:40              ####
-#### @Author  : themanoftalent                ####
-#### @Site:https://github.com/themanoftalent  ####
-#### @Project : python-app                    ####
-#### **************************************** ####
-##################################################
-
 # coding: utf8
-"""
-
-    webencodings.x_user_defined
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-    An implementation of the x-user-defined encoding.
-
-    :copyright: Copyright 2012 by Simon Sapin
-    :license: BSD, see LICENSE for details.
-
-"""
 
 from __future__ import unicode_literals
 

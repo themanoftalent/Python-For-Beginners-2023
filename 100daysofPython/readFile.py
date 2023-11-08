@@ -1,5 +1,3 @@
-
-
 f = open("straight_linez.txt","r")
 #first line is useless
 f.readline()

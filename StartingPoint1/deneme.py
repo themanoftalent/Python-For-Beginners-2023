@@ -1,19 +1,26 @@
-# print(list(range(0,100,20)))
-#
-#
-# for item in [0,20,40,60][:3]:
-#     print(item)
+import random
+import _random
 
-#=================================
-ids=['B3','\nB4','\nB5','\nB6']
+def playGuess():
+    print ('Type a number betwen 1-100 ')
 
-with open('ids.txt','w') as f:
+    number =random.randint(1,101)
+    guess = 0
 
-    for item in ids:
-        f.write(item)
+    while number!=guess:
+        print()
+        if number>guess:
+            print('too gigh')
+            guess+=1
+        elif number<guess:
+            print('too low')
+            guess+=1
+        else:
+            print('Enter an int')
+            break
 
-with open('ids.txt','r') as fs:
-   line=fs.read()
-   for line in ids:
-       print(line)
-#=================================
+
+
+
+playGuess()
+

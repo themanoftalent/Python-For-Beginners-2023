@@ -1,18 +1,5 @@
-##################################################
-#### **************************************** ####
-#### !/usr/bin/python3                        ####
-#### -*- coding: utf-8 -*-                    ####
-#### @Time    : 2023/20/10 11:40              ####
-#### @Author  : themanoftalent                ####
-#### @Site:https://github.com/themanoftalent  ####
-#### @Project : python-app                    ####
-#### **************************************** ####
-##################################################
-
 from __future__ import absolute_import, division, unicode_literals
-
 import re
-
 from . import base
 from ..constants import rcdataElements, spaceCharacters
 spaceCharacters = "".join(spaceCharacters)
